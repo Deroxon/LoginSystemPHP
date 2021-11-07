@@ -7,7 +7,7 @@
     $money = $_SESSION['money'];
 
 
-    echo "Your account state is: $money ";
+    echo "Your account state is: $money$ ";
 
     echo "<form action='remove.php' method='POST'> 
 
@@ -15,10 +15,20 @@
 
         <input type='submit' value='remove money' />
 
-    </form ";
+    </form> ";
+
+
+    echo "<form action='add.php' method='POST'> 
+
+    <input type='number' name='sum' />
+
+    <input type='submit' value='add money' />
+
+    </form> ";
+
 
 ?>
-
+    <br>
     <button><a href="afterLogged.php?akcja=wyloguj ">Logout</a></button>
 
 
