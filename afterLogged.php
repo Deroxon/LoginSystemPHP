@@ -19,4 +19,21 @@
 
 ?>
 
-    <a href="session.php?akcja=wyloguj ">Logout</a> 
+    <button><a href="afterLogged.php?akcja=wyloguj ">Logout</a></button>
+
+
+<?php 
+
+        if(isset($_GET['akcja'])) {
+            if($_GET['akcja']=="wyloguj") {
+                unset($_SESSION['money']);
+                unset($_SESSION['username']);
+                session_destroy(); // usunięcie sesji
+                header('Location: index.php'); // POWRÓT do głownej strony
+
+            }
+        }
+
+
+
+?>
