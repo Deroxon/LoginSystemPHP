@@ -33,11 +33,11 @@
         <br /><br />
 
         <label name="regPassword">Password: </label>
-        <input type="text" name="regPassword" />
+        <input type="password" name="regPassword" />
         <br /><br />
 
         <label name="regCPassword">Confirm Password: </label>
-        <input type="text" name="regCPassword" />
+        <input type="password" name="regCPassword" />
         <br /><br />
 
         <label name="regEmail">Email: </label>
